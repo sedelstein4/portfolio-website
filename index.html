@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Edelstein - Frontend Developer</title>
-    <meta name="description" content="Sam Edelstein builds mobile and web apps with React Native, React and TypeScript. Co-founder of Poliquicks, maker of Saver Sam's, former FoodCorps service member. Open to remote US roles.">
+    <meta name="description" content="Sam Edelstein is a frontend developer building mobile and web apps with React Native, React and TypeScript. Co-founder of Poliquicks and maker of Saver Sam's.">
     <meta name="author" content="Sam Edelstein">
-    <meta name="theme-color" content="#4361ee">
     <link rel="canonical" href="https://sam-edelstein-portfolio.netlify.app/">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sam Edelstein - Frontend Developer">
-    <meta property="og:description" content="Mobile and web apps with React Native, React and TypeScript. Co-founder of Poliquicks, maker of Saver Sam's. Open to remote US roles.">
+    <meta property="og:description" content="Frontend developer building mobile and web apps with React Native, React and TypeScript. Co-founder of Poliquicks and maker of Saver Sam's.">
     <meta property="og:url" content="https://sam-edelstein-portfolio.netlify.app/">
     <meta property="og:image" content="https://sam-edelstein-portfolio.netlify.app/images/saver-sams.jpg">
     <meta name="twitter:card" content="summary_large_image">
@@ -32,21 +31,6 @@
             --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.14);
         }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --primary-color: #8da2ff;
-                --secondary-color: #c3ccff;
-                --text-color: #e6e8ef;
-                --light-color: #14161c;
-                --gray-color: #a3aab8;
-                --dark-color: #f3f4f8;
-                --card-bg: #1d2028;
-                --tag-bg: rgba(141, 162, 255, 0.16);
-                --border: rgba(255, 255, 255, 0.08);
-                --shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-                --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.5);
-            }
-        }
 
         * {
             margin: 0;
@@ -172,26 +156,6 @@
             max-width: 720px;
         }
 
-        .status-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--tag-bg);
-            color: var(--primary-color);
-            border-radius: 30px;
-            padding: 0.3rem 0.9rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1.25rem;
-        }
-
-        .status-pill::before {
-            content: "";
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #2fbf71;
-        }
 
         .hero h1 {
             font-size: 3rem;
@@ -213,12 +177,6 @@
             color: var(--gray-color);
         }
 
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 1.5rem;
-        }
 
         .btn {
             display: inline-block;
@@ -237,17 +195,6 @@
             box-shadow: var(--shadow);
         }
 
-        .btn-outline {
-            background: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            padding: calc(0.75rem - 2px) calc(1.5rem - 2px);
-        }
-
-        .btn-outline:hover {
-            background: var(--tag-bg);
-            color: var(--primary-color);
-        }
 
         /* Sections */
         section {
@@ -283,34 +230,15 @@
         }
 
         /* About */
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+        .about-text {
+            max-width: 760px;
+            margin: 0 auto;
         }
 
-        .about-card {
-            background: var(--light-color);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.75rem;
-        }
-
-        .about-card i {
-            font-size: 1.6rem;
-            color: var(--primary-color);
-            margin-bottom: 0.75rem;
-        }
-
-        .about-card h3 {
-            font-size: 1.15rem;
-            margin-bottom: 0.5rem;
-            color: var(--dark-color);
-        }
-
-        .about-card p {
+        .about-text p {
             color: var(--gray-color);
-            font-size: 0.98rem;
+            font-size: 1.05rem;
+            margin-bottom: 1.25rem;
         }
 
         /* Skills */
@@ -373,7 +301,7 @@
         .project-img {
             height: 200px;
             overflow: hidden;
-            background: #1f2430;
+            background: var(--light-color);
         }
 
         .project-img img {
@@ -410,8 +338,6 @@
             font-size: 0.85rem;
             color: var(--gray-color);
             margin-bottom: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
         }
 
         .project-content > p {
@@ -449,10 +375,6 @@
             font-weight: 500;
         }
 
-        .project-links .muted {
-            color: var(--gray-color);
-            font-weight: 400;
-        }
 
         /* Contact */
         .contact-content {
@@ -497,10 +419,6 @@
             text-align: center;
             padding: 2rem 0;
             font-size: 0.95rem;
-        }
-
-        footer a {
-            color: #aeb9ff;
         }
 
         /* Responsive */
@@ -575,15 +493,10 @@
         <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
-                    <span class="status-pill">Open to remote US roles</span>
                     <h1>Sam Edelstein</h1>
-                    <h2>Frontend Developer &amp; Product Builder</h2>
-                    <p>I build mobile and web apps with React Native, React and TypeScript, and these days I ship faster by pairing with AI coding tools. I co-founded Poliquicks and ran its product, design and 15-person team as COO.</p>
-                    <p>Before tech I spent two years with FoodCorps in DC public schools. I'm most interested in work where software meets food, nutrition and community.</p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn">See my work</a>
-                        <a href="#contact" class="btn btn-outline">Get in touch</a>
-                    </div>
+                    <h2>Frontend Developer</h2>
+                    <p>I specialize in building responsive, user-friendly mobile and web applications with React Native and React. Passionate about creating intuitive user experiences and solving complex problems through clean, efficient code. My experience spans from co-founding tech startups to leading development teams, as well as contributing to product strategy and hands-on design work.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
                 </div>
             </div>
         </section>
@@ -592,25 +505,12 @@
         <section class="alt" id="about">
             <div class="container">
                 <div class="section-title">
-                    <h2>What I bring</h2>
+                    <h2>About</h2>
                     <div class="line"></div>
                 </div>
-                <div class="about-grid">
-                    <div class="about-card">
-                        <i class="fas fa-code" aria-hidden="true"></i>
-                        <h3>Engineering</h3>
-                        <p>Six years of frontend work across React Native, React and TypeScript, from cross-platform mobile apps in the app stores to static sites that pay their own hosting bill. Comfortable owning a feature from Figma to release.</p>
-                    </div>
-                    <div class="about-card">
-                        <i class="fas fa-compass-drafting" aria-hidden="true"></i>
-                        <h3>Product and leadership</h3>
-                        <p>As Poliquicks co-founder and COO I led a 15-person team, ran Figma prototyping and user testing, built partnerships and owned the roadmap. I like turning messy feedback into a plan people can execute.</p>
-                    </div>
-                    <div class="about-card">
-                        <i class="fas fa-seedling" aria-hidden="true"></i>
-                        <h3>Food and community</h3>
-                        <p>Two years with FoodCorps and AmeriCorps running school nutrition programs and a cafeteria feedback process across 100+ DC schools. Coordinated a mutual-aid food-sharing program and led a campus group fighting food insecurity.</p>
-                    </div>
+                <div class="about-text">
+                    <p>I've spent about six years building for the web and mobile, most of it in React and React Native. At Poliquicks I was a co-founder and COO: I built the app, led a 15-person team, ran prototyping and user testing in Figma, and handled partnerships and the roadmap.</p>
+                    <p>Before that I spent two years with FoodCorps and AmeriCorps in DC public schools, running nutrition programs and a cafeteria feedback process across more than 100 schools. I've also worked as a deals analyst at Wirecutter, coordinated a mutual-aid food-sharing program, and led a campus group working on food insecurity. I'm happiest working on things that sit between technology, food and community.</p>
                 </div>
             </div>
         </section>
@@ -619,7 +519,7 @@
         <section id="skills">
             <div class="container">
                 <div class="section-title">
-                    <h2>Skills</h2>
+                    <h2>My Skills</h2>
                     <div class="line"></div>
                 </div>
                 <div class="skills-container">
@@ -634,7 +534,6 @@
                     <div class="skill-card"><i class="fab fa-microsoft" aria-hidden="true"></i><h3>Azure</h3></div>
                     <div class="skill-card"><i class="fab fa-github" aria-hidden="true"></i><h3>GitHub Actions</h3></div>
                     <div class="skill-card"><i class="fab fa-figma" aria-hidden="true"></i><h3>Figma</h3></div>
-                    <div class="skill-card"><i class="fas fa-robot" aria-hidden="true"></i><h3>AI coding tools</h3></div>
                 </div>
             </div>
         </section>
@@ -643,53 +542,10 @@
         <section class="alt" id="projects">
             <div class="container">
                 <div class="section-title">
-                    <h2>Projects</h2>
+                    <h2>My Projects</h2>
                     <div class="line"></div>
-                    <p>Newest first. Things I built, shipped and, in most cases, still maintain.</p>
                 </div>
                 <div class="projects-container">
-
-                    <!-- Saver Sam's -->
-                    <article class="project-card">
-                        <div class="project-img">
-                            <img src="images/saver-sams.jpg" alt="Saver Sam's Travel Saving Service: trip cost reviews from $29" width="1200" height="630" loading="lazy" decoding="async">
-                        </div>
-                        <div class="project-content">
-                            <h3>Saver Sam's</h3>
-                            <p class="project-role">Founder, designer, developer · 2026</p>
-                            <p>A trip cost review service. Send me your itinerary and get back a line-by-line report of where to save within 48 hours. Hand-built static site with Netlify Forms, Stripe payment links, a nightly GitHub Actions job that enforces a 90-day data-retention promise, and a Google Sheets pipeline for submissions.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML / CSS / JS</span>
-                                <span class="tech-tag">Netlify</span>
-                                <span class="tech-tag">Stripe</span>
-                                <span class="tech-tag">GitHub Actions</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://saversams.com/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Job Tracker -->
-                    <article class="project-card">
-                        <div class="project-img">
-                            <img src="images/job-tracker.svg" alt="Mockup of a daily job digest grouped by company" width="1200" height="630" loading="lazy" decoding="async">
-                        </div>
-                        <div class="project-content">
-                            <h3>Job Tracker</h3>
-                            <p class="project-role">Solo project · 2026</p>
-                            <p>A free, no-LLM job tracker. Every morning a GitHub Actions workflow checks 33 company boards and aggregators across nine ATS platforms, keeps only new postings that pass configurable keyword, location and experience filters, and posts a digest as a GitHub issue. State lives in the repo, so it costs nothing to run. Built in two days with Claude Code.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">GitHub Actions</span>
-                                <span class="tech-tag">REST APIs</span>
-                                <span class="tech-tag">Claude Code</span>
-                            </div>
-                            <div class="project-links">
-                                <span class="muted"><i class="fas fa-lock" aria-hidden="true"></i> Private repo, happy to walk through it</span>
-                            </div>
-                        </div>
-                    </article>
 
                     <!-- Poliquicks -->
                     <article class="project-card">
@@ -698,7 +554,7 @@
                         </div>
                         <div class="project-content">
                             <h3>Poliquicks</h3>
-                            <p class="project-role">Co-founder, COO, lead mobile developer · 2024 to 2025</p>
+                            <p class="project-role">Co-founder, COO and mobile developer, 2024 to 2025</p>
                             <p>A nonpartisan political mobile app that uses AI and diverse data sources to make political information easier to find and understand. I built the React Native app, led a 15-person team, and ran prototyping, user testing and partnerships.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">React Native</span>
@@ -714,6 +570,27 @@
                         </div>
                     </article>
 
+                    <!-- Saver Sam's -->
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="images/saver-sams.jpg" alt="Saver Sam's Travel Saving Service: trip cost reviews from $29" width="1200" height="630" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-content">
+                            <h3>Saver Sam's</h3>
+                            <p class="project-role">Founder and developer, 2026</p>
+                            <p>A trip cost review service. Send me your itinerary and get back a line-by-line report of where to save within 48 hours. Hand-built static site with Netlify Forms, Stripe payment links, a nightly GitHub Actions job that enforces a 90-day data-retention promise, and a Google Sheets pipeline for submissions.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML / CSS / JS</span>
+                                <span class="tech-tag">Netlify</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://saversams.com/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+                            </div>
+                        </div>
+                    </article>
+
                     <!-- Porchfest -->
                     <article class="project-card">
                         <div class="project-img contain">
@@ -721,7 +598,7 @@
                         </div>
                         <div class="project-content">
                             <h3>Porchfest Live</h3>
-                            <p class="project-role">Developer · 2022</p>
+                            <p class="project-role">Developer, 2022</p>
                             <p>A web app for the Ithaca Porchfest music festival: schedule, map and artist pages, built with Next.js on humane-technology principles so people spend less time on their phones and more time at the porches.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Next.js</span>
@@ -802,12 +679,12 @@
         <section id="contact">
             <div class="container">
                 <div class="section-title">
-                    <h2>Get in touch</h2>
+                    <h2>Get In Touch</h2>
                     <div class="line"></div>
                 </div>
                 <div class="contact-content">
-                    <p>I'm looking for remote, US-based roles where tech meets food, nutrition or community: engineering, product, implementation or operations. If that sounds like your team, or you just want to say hi, I'd love to hear from you.</p>
-                    <a href="mailto:sedelstein4@gmail.com" class="btn">Email me</a>
+                    <p>I'm currently looking for new remote opportunities, ideally where tech meets food, nutrition or community. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <a href="mailto:sedelstein4@gmail.com" class="btn">Email Me</a>
                     <div class="contact-links">
                         <a href="https://github.com/sedelstein4" target="_blank" rel="noopener" class="contact-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
                         <a href="https://www.linkedin.com/in/sam-edelstein-9b9026173/" target="_blank" rel="noopener" class="contact-link"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
@@ -820,7 +697,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="year">2026</span> Sam Edelstein. Hand-coded, no framework, <a href="https://github.com/sedelstein4/portfolio-website" rel="noopener">source on GitHub</a>.</p>
+            <p>&copy; <span id="year">2026</span> Sam Edelstein. All rights reserved.</p>
         </div>
     </footer>
 
