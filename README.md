@@ -10,7 +10,7 @@ Single-page portfolio. One HTML file with inline CSS and a few lines of JS, no b
 
 Copy one of the `<article class="project-card">` blocks in `index.html`, newest first. Each card has an
 image (1200×630 or similar, kept under ~300 KB), a title, a one-line role/year, a short description,
-tech tags, and links. Use `project-img contain` for logos/icons instead of screenshots. Order is Poliquicks, then Saver Sam's, then the rest.
+tech tags, and links. Use `project-img contain` for logos/icons instead of screenshots. Order is Poliquicks, Weather Consensus, Saver Sam's, then the rest.
 
 ## Deploying
 
